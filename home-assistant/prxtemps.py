@@ -26,7 +26,7 @@ headers = {
 
 def http_post(k, v):
     url = f"http://{ha_ipaddress:s}:{ha_port:s}/api/states/proxmox.{k:s}_temp"
-    data = '{"state": %s}' % v
+    data = '{"state": %d}' % v
     response = post(url, headers=headers, data=data, verify=False)
 
 http_post("nvme0", nvme_temp("/dev/nvme0"))
