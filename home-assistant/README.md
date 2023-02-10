@@ -1,11 +1,11 @@
-# prxtemps.py
+# readtemps.py
 
-This script is used to read the nvme, sdd, CPU and NIC temperatures of my Proxmox machine and post them to my Home Assistant (HA) server. I haved uploaded it here in case somebody might find use for it.
+This script is used to read the nvme, hdd, cpu and nic temperatures of a linux machine and post them to a Home Assistant (HA) server. I have uploaded it here in case somebody might find it useful.
 
-The script is ment to be executed on a Linux machine. To use it on your machine you need to change a few things.
+The script is meant to be executed on a Linux machine. To use it on your machine you need to change a few things.
 
-* Replace the IP-address, port number and access token at the top of the script so it matches your HA installation. The access token can be generated at the bottom of your user profile in
-  HA (click your username at the bottom of the left side bar)
+* Change ha_ipaddress, ha_port and ha_access_token at the top of the script so it matches your HA installation. The access token can be generated at the bottom of your user profile in
+  HA (click your username at the bottom of the left side bar).
 
 * Replace the device names inside the http_post calls.
 
